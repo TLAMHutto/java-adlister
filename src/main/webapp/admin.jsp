@@ -6,7 +6,6 @@
 </head>
 <body>
 <%-- create login page--%>
-<%@ include file="index.jsp" %>
 <hr/>
 
 <h3>Admin</h3>
