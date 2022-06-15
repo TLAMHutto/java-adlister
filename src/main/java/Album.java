@@ -7,16 +7,39 @@ public class Album implements Serializable {
     private float sales;
     private String genre;
 
-    public Album(String name, String artist, int releaseYear, float sales, String genre) {
+    public Album(){}
+
+    //getters and setters
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
         this.name = name;
+    }
+    public String getArtist() {
+        return artist;
+    }
+    public void setArtist(String artist) {
         this.artist = artist;
+    }
+    public int getReleaseYear() {
+        return releaseYear;
+    }
+    public void setReleaseYear(int releaseYear) {
         this.releaseYear = releaseYear;
+    }
+    public float getSales() {
+        return sales;
+    }
+    public void setSales(float sales) {
         this.sales = sales;
+    }
+    public String getGenre() {
+        return genre;
+    }
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
-    public static void main(String[] args) {
-        Album album = new Album("The Dark Side of the Moon", "Pink Floyd", 1973, 1000000, "Rock");
-        System.out.println(album.toString());
-    }
+
 }
