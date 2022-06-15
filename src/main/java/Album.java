@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class Album implements Serializable {
+    private int id;
     private String name;
     private String artist;
     private int releaseYear;
@@ -10,6 +11,12 @@ public class Album implements Serializable {
     public Album(){}
 
     //getters and setters
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getName() {
         return name;
     }
